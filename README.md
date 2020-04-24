@@ -4,7 +4,8 @@ Pharo Project code snippets and useful hints
 # Setting up Github environment
 ## SSH keys on Github
 * Generate new public/private key pair if needed: https://help.github.com/articles/generating-an-ssh-key/
-* Open Configuration on Github:
+* Open Configuration on Github: User -> Settings -> SSH and GPG keys
+![SSH keys - Github](ssh_keys_github.png)
 
 
 
