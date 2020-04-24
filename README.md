@@ -10,7 +10,7 @@ Pharo Project code snippets and useful hints
 
 ## SSH keys in Pharo
 Open configuration of Iceberg tool and set local path:
-![Pharo settings - Github](image.png)
+![Pharo settings - Github](pharo_settings_ssh_keys.png)
 
 
 
