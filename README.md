@@ -23,3 +23,30 @@ Metacello new
     repository: 'github://sebastianconcept/PharoDawnTheme';
     load.
 ```
+# Pharo Web Image 
+This should work with P8 stable 64 bit
+
+## Installing Seaside and Bootstrap4
+Load Bootstrap that will load Seaside as dependency: 
+```
+Metacello new
+      baseline:'Bootstrap4';
+      repository: 'github://astares/Seaside-Bootstrap4:master/src';
+      load
+```
+### Installing standalone Seaside
+TODO
+
+### Installing standalone Bootstrap
+TODO
+
+## Installing Magritte
+```
+	Metacello new
+    baseline:'Magritte';
+    repository: 'github://magritte-metamodel/magritte:master';
+	onConflictUseLoaded;
+    load.
+```
+
+
