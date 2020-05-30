@@ -48,5 +48,8 @@ TODO
 	onConflictUseLoaded;
     load.
 ```
-
+## Pharo Web Deployment
+* Deploying tips in AWS: http://forum.world.st/Getting-Pharo-running-on-AWS-td5117353.html
+* https://pharoweekly.wordpress.com/2020/05/20/deployment-tips-from-the-pros/
+* http://forum.world.st/running-Pharo8-in-Digitalocean-tt5115160.html
 
