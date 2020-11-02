@@ -16,5 +16,5 @@ result := nil.
    self traceCr: result.
 ] fork. 
 ```
-`semaphore wait`- waits on semaphore, until some other process resumes semaphore.
-`semapthore signal`- resumes semaphore, so that other process (that waits) is resumed and can continue.
+`semaphore wait`- waits on semaphore, until some other process resumes semaphore.  
+`semapthore signal`- resumes semaphore, so that other process (that waits) is resumed and can continue.  
