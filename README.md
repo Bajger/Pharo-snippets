@@ -1,6 +1,6 @@
 # Pharo-snippets
-Pharo Project code snippets and useful hints. Some topics here:
-[Concurrent programming hints](./concurrent-programming.md)
+Pharo Project code snippets and useful hints. Some topics here:  
+  * [Concurrent programming hints](./concurrent-programming.md)
 
 
 # Setting up Github environment
