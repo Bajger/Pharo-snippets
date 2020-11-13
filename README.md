@@ -25,6 +25,10 @@ Metacello new
     repository: 'github://sebastianconcept/PharoDawnTheme';
     load.
 ```
+# Debugging / profiling
+Finding all references: `self pointersTo: anObject` 
+or use reference finder by: `ReferenceFinder findPathTo: #nil` 
+
 # Pharo Web Image 
 This should work with P8 stable 64 bit
 
