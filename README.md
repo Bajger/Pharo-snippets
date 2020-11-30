@@ -55,7 +55,15 @@ TODO
     load.
 ```
 ## Pharo Web Deployment
-* Deploying tips in AWS: http://forum.world.st/Getting-Pharo-running-on-AWS-td5117353.html
-* https://pharoweekly.wordpress.com/2020/05/20/deployment-tips-from-the-pros/
-* http://forum.world.st/running-Pharo8-in-Digitalocean-tt5115160.html
+Deploying tips in AWS: http://forum.world.st/Getting-Pharo-running-on-AWS-td5117353.html  
+https://pharoweekly.wordpress.com/2020/05/20/deployment-tips-from-the-pros/  
+http://forum.world.st/running-Pharo8-in-Digitalocean-tt5115160.html  
 
+Options to easily setup a custom server: running a virtual machine in Azure, AWS, Google Cloud or elsewhere usually only takes a few minutes.  So it's not different from other web deployments: run on a specific port and put a webserver like Apache, Nginx or other in front.  
+
+Some more Seaside specific resources:
+ - https://www.linode.com/docs/guides/deploy-smalltalk-applications-with-seaside/  
+ - http://book.seaside.st/book/advanced/deployment/deployment-preparing  
+ - https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/DeploymentWeb/DeployForProduction.html  
+
+You can also use docker to deploy (see http://wiki.astares.com/pharo/612)
