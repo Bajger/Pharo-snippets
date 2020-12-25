@@ -29,10 +29,19 @@ Metacello new
 Finding all references: `self pointersTo: anObject` 
 or use reference finder by: `ReferenceFinder findPathTo: #nil` 
 
-# Pharo Web Image 
-This should work with P8 stable 64 bit
+# Pharo Projects 
+## Pharo launcher 
+To load: 
+```
+Metacello new
+	repository: 'github://pharo-project/pharo-launcher:dev/src';
+	baseline: 'PharoLauncher';
+	load
+```
+
 
 ## Installing Seaside and Bootstrap4
+This should work with P8 stable 64 bit  
 Load Bootstrap that will load Seaside as dependency: 
 ```
 Metacello new
