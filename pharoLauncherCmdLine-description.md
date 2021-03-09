@@ -16,14 +16,26 @@ Command | Description
 ## Action commands
 Command | Description
 ------- | -----------
-`launch <imageName>` | Lauches image with using default (auto-detected) VM.
-`createImage <templateName>` | Downloads and creates new image on local computer from remote site based on template name.
-`deleteImage <imageName>` | Deletes image from computer, including local image directory content.
-`updateVM <vmName>` | Updates VM executable, including depedent libs to latest version from remote site.
-`deleteVM <vmName>` | Deletes VM executable from local computer, including dependencies.
+`launch` | Lauches image with using default (auto-detected) VM.
+`createImage` | Downloads and creates new image on local computer from remote site based on template name.
+`deleteImage` | Deletes image from computer, including local image directory content.
+`updateVM` | Updates VM executable, including depedent libs to latest version from remote site.
+`deleteVM` | Deletes VM executable from local computer, including dependencies.
+`showVMDir` | Prints directory path of given VM.
 
-# Description of Pharo Launcher commands.
+## Configuration commands
+This lists just bare minimum subset of config options for now.
+Command | Description
+------- | -----------
+`templateSourcesDir` | Prints, sets directory path where file with template sources is located.
+`templateSoucesUrl` | Prints, sets https URL, where template sources can be fetched remote site (official).
+`imageInitScriptsDir` | todo.
+
+
+# Description of Pharo Launcher commands  
 ## Help command  
+```
+
 Command line interface for Pharo Launcher.
 Common purpose is to create Pharo image, lauch Pharo, delete image, update VMs, etc.
 
@@ -31,3 +43,5 @@ Common purpose is to create Pharo image, lauch Pharo, delete image, update VMs, 
 ### Usage  
 ### Parameters  
 ### Options  
+```
+
