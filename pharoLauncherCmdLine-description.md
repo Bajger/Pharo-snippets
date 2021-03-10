@@ -1,6 +1,13 @@
 # Introduction  
 Purpose of this document is to describe command line interface for Pharo launcher with description of necessary commands.  
 
+# Open questions
+1. What if there is some interaction needed? E.g. network is unavailable, should we offer dialog-like options (e.g.: "Reconnect Y/N?"), or rather to avoid that?
+2. What is priority of given commands? I guess some of them are more important than others.
+3. How to escape path parameters? What type of quotes should be used? (single like 'path to dir' or rathter "this is path"
+4. How to print-out errors? Some kind of formatting? (E.g. "ERROR: Could not create image to directory: usr/local/Pharo/images")
+5. How to display progress (if ever)? This could be useful during downlaod commands, like "INFO: Fetching from remote-site URL..." (dot's added every second, or maybe percentage?).
+
 # Overview of Pharo Laucher commands  
 ## Informative commands
 Command | Description
@@ -21,7 +28,6 @@ Command | Description
 `deleteImage` | Deletes image from computer, including local image directory content.
 `updateVM` | Updates VM executable, including depedent libs to latest version from remote site.
 `deleteVM` | Deletes VM executable from local computer, including dependencies.
-`showVMDir` | Prints directory path of given VM.
 
 ## Configuration commands
 This lists just bare minimum subset of config options for now.
