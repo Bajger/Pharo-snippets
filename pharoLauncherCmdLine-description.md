@@ -35,13 +35,32 @@ Command | Description
 # Description of Pharo Launcher commands  
 ## Help command  
 ```
-
-This is help for command line interface for Pharo Launcher.
+This is help for command line interface of Pharo Launcher.
 Common purpose of laucher is to create Pharo image locally from remote site template, lauch Pharo, eventually delete image, update VMs, etc.
 
+Usage:  [command] [--help]
 
-### Usage  
-### Parameters  
-### Options  
+Informative commands:
+  help                    Prints all supported commands. Prints help about given command.
+  listVMs                 Lists all available VMs, with status.
+  listImages              Lists all downloaded images on local computer.
+  listTemplates           Lists all image templates. 
+  listTemplateCategories  Lists all image template categories, based on which are image templates categorized.
+  imageInfo               Prints information about image: name, description, origin template, etc.
+  vmInfo                  Prints information about VM.
+
+Action commands:
+  launch					        Lauches image with using default (auto-detected) VM.
+  createImage				      Downloads and creates new image on local computer from remote site based on template name.
+  deleteImage				      Deletes image from computer, including local image directory content.
+  updateVM				        Updates VM executable on local computer, including depedent libs to latest version from remote site.
+  deleteVM				        Deletes VM executable from local computer, including dependencies.
+
+Configuration commands (configuration options of Pharo Launcher):
+  templateSourcesDir      Prints, sets directory path where file with template sources is located.
+  templateSoucesUrl       Prints, sets https URL, where template sources can be fetched remote site (official).
+  imageInitScriptsDir     Prints, sets directory path, where init scripts for images are located.
+
+Options:
+-h, --help                Prints information about this command. 
 ```
-
