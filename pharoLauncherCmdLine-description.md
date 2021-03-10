@@ -76,3 +76,25 @@ Parameters:
 Options:
 -h, --help                Prints help about this command. 
 ```
+
+## List of VMs command
+Example of use:
+```
+$ listVMs
+VM name                 Last Update
+-------                 -----------
+90-x86                  N/A
+90-x64-headless         N/A
+80-x64                  2020-11-03 10:32:47
+70-x86                  2020-02-26 15:47:31
+```
+### Help for list of VMs command
+```
+Lists all available VMs, with status.
+
+Usage:  listVMs [--help] [--verbose]
+
+Options:
+-h, --help                Prints help about this command.
+-v, --verbose             Verbose information about VMs, including local directory path, remote site URL from which was VM copied.
+```
