@@ -18,7 +18,7 @@ Command | Description
 `listTemplates` | Lists all image templates. 
 `listTemplateCategories` | lists all image template categories, based on which are image templates categorized.
 `imageInfo` | Prints information about image: name, description, origin template, etc.
-`vmInfo` | Prints information about VM.
+`vmInfo` | Prints information about VM: name, remote-site URL, last update status, etc.
 
 ## Action commands
 Command | Description
