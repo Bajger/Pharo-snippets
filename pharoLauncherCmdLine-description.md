@@ -36,8 +36,8 @@ Command | Description
 ## Help command  
 ```
 
-Command line interface for Pharo Launcher.
-Common purpose is to create Pharo image, lauch Pharo, delete image, update VMs, etc.
+This is help for command line interface for Pharo Launcher.
+Common purpose of laucher is to create Pharo image locally from remote site template, lauch Pharo, eventually delete image, update VMs, etc.
 
 
 ### Usage  
