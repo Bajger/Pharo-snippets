@@ -29,7 +29,7 @@ Command | Description
 ------- | -----------
 `templateSourcesDir` | Prints, sets directory path where file with template sources is located.
 `templateSoucesUrl` | Prints, sets https URL, where template sources can be fetched remote site (official).
-`imageInitScriptsDir` | todo.
+`imageInitScriptsDir` | Prints, sets directory path, where init scripts for images are located.
 
 
 # Description of Pharo Launcher commands  
@@ -62,5 +62,17 @@ Configuration commands (configuration options of Pharo Launcher):
   imageInitScriptsDir     Prints, sets directory path, where init scripts for images are located.
 
 Options:
--h, --help                Prints information about this command. 
+-h, --help                Prints help about this command. 
+```
+### Help command help
+```
+Prints help about given command.
+
+Usage: help [<command>] [--help]
+
+Parameters: 
+<command>                 Name of given command, for which is help printed.
+
+Options:
+-h, --help                Prints help about this command. 
 ```
