@@ -111,3 +111,24 @@ Usage:  listVMs [--help]
 Options:
 -h, --help                Prints help about this command.
 ```
+## List images command
+Example of use:  
+```
+$ listImages
+Image name                                  Architecture          Pharo Version           Last Modified               Last modified (ago)
+----------                                  ------------          -------------           -------------               -------------------       
+P9-64b-devel                                64                    90                      2021-03-01T12:22:11+1:00    last week
+PharoWeb                                    32                    50                      2019-10-10T08:34:59+1:00    more than year ago
+Pharo 7.0 - 32bit (Exercism new 23)         32                    70                      2019-03-21T11:11:23+1:00    more than year ago
+```
+### Help for list images command
+```
+Lists all available Pharo images on local computer, with image name, architecture, Pharo version, last modified date.
+Images are ordered by recent modification date.
+
+Usage:  listImages [--help] [--name]
+
+Options:
+-h, --help                Prints help about this command.
+-n, --name                Prints only image names. 
+```
