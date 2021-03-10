@@ -50,11 +50,11 @@ Informative commands:
   vmInfo                  Prints information about VM.
 
 Action commands:
-  launch					        Lauches image with using default (auto-detected) VM.
-  createImage				      Downloads and creates new image on local computer from remote site based on template name.
-  deleteImage				      Deletes image from computer, including local image directory content.
-  updateVM				        Updates VM executable on local computer, including depedent libs to latest version from remote site.
-  deleteVM				        Deletes VM executable from local computer, including dependencies.
+  launch                  Lauches image with using default (auto-detected) VM.
+  createImage             Downloads and creates new image on local computer from remote site based on template name.
+  deleteImage             Deletes image from computer, including local image directory content.
+  updateVM                Updates VM executable on local computer, including depedent libs to latest version from remote site.
+  deleteVM                Deletes VM executable from local computer, including dependencies.
 
 Configuration commands (configuration options of Pharo Launcher):
   templateSourcesDir      Prints, sets directory path where file with template sources is located.
