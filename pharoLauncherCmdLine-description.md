@@ -132,3 +132,16 @@ Options:
 -h, --help                Prints help about this command.
 -n, --name                Prints only image names. 
 ```
+## Image info command
+Example of use:  
+```
+$ imageInfo "Pharo 7.0 - 32bit (Exercism new 23"
+Image name:           Pharo 7.0 - 32bit (Exercism new 23
+Last modified:        2019-10-10T08:34:59+1:00
+Description:          (not available)
+Origin template:      Pharo 7.0 - 32bit (stable)
+Origin template URL:  https://files.pharo.org/image/70/latest.zip
+Image directory:      "/usr/local/user/images/Pharo 7.0 - 32bit (Exercism new 23"
+
+```
+
