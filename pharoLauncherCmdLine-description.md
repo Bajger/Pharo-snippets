@@ -81,20 +81,21 @@ Options:
 Example of use:
 ```
 $ listVMs
-VM name                 Last Update
--------                 -----------
-90-x86                  N/A
-90-x64-headless         N/A
-80-x64                  2020-11-03 10:32:47
-70-x86                  2020-02-26 15:47:31
+VM name                 Last Update               Remote URL
+-------                 -----------               ----------                 
+90-x86                  N/A                       https://files.pharo.org/get-files/90/pharo-win-stable.zip
+90-x64-headless         N/A                       https://files.pharo.org/get-files/90/pharo64-win-headless-latest.zip
+80-x64                  2020-11-03 10:32:47       https://files.pharo.org/get-files/80/pharo64-win-stable.zip
+70-x86                  2020-02-26 15:47:31       https://files.pharo.org/get-files/70/pharo-win-stable.zip
 ```
+
 ### Help for list of VMs command
 ```
-Lists all available VMs, with status.
+Lists all available VMs, with last update status, remote site URL, from which was VM copied (if ever).
+(N/A status (last update) means that VM is not on local computer available.)
 
-Usage:  listVMs [--help] [--verbose]
+Usage:  listVMs [--help] 
 
 Options:
 -h, --help                Prints help about this command.
--v, --verbose             Verbose information about VMs, including local directory path, remote site URL from which was VM copied.
 ```
