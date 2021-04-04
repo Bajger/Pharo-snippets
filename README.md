@@ -4,16 +4,21 @@ Pharo Project code snippets and useful hints. Some topics here:
 
 
 # Setting up Github environment
-## SSH keys on Github
+## Step 1: SSH keys on Github
 * Generate new public/private key pair if needed: https://help.github.com/articles/generating-an-ssh-key/
 * Open Configuration on Github: User -> Settings -> SSH and GPG keys
 ![SSH keys - Github](ssh_keys_github.png)
 
 
 
-## SSH keys in Pharo
-Open configuration of Iceberg tool and set local path:
-![Pharo settings - Github](pharo_settings_ssh_keys.png)
+## Step 2: SSH keys and other settings for Iceberg in Pharo
+Open configuration of Iceberg tool (World menu > Tools > Iceberg > click Settings icon) and set:
+- local path to ssh keys: ![Pharo settings - Github](pharo_settings_ssh_keys.png)
+- set Default Code Subdirectory to: 'src'
+- set File format type to: 'Tonel'
+
+## Step 3: Set local path to image directory
+Open system configuration from World menu > Pharo > Settings > System tab > Local Directory > click directory icon and navigate to path, where directory with image is located
 
 
 
