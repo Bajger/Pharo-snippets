@@ -30,9 +30,14 @@ Open system configuration from World menu > Pharo > Settings > System tab > Loca
 - Open Iceberg and click '+' add icon
 - Choose "Clone from Github.com"
 - Set your name from Github and type repository name you want to clone
-- Choose "HTTPS" and click Ok
+- Choose "HTTPS" and click Ok  
 ![Github-clone-Github-repo](2021-04-04%2020_00_44-CloneRepo.png)
 
+## Step 6: Repair metadata of empty repository
+After cloning, you'll see project in Iceberg in state, where project metadata (how packages, classes are organized in repo) are missing. State "No project found" will be on line with cloned repo.  
+![Github-clone-Github-repo](2021-04-04%2020_42_23-Repair-repo.png)
+- Choose "Repair repository" in context menu (right-click on repo)
+- 
 
 
 # Pharo IDE
