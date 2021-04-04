@@ -31,7 +31,7 @@ Open system configuration from World menu > Pharo > Settings > System tab > Loca
 - Choose "Clone from Github.com"
 - Set your name from Github and type repository name you want to clone
 - Choose "HTTPS" and click Ok
-![Github-clone-Github-repo](2021-04-04%2019_51_58-Clipboard.png)
+![Github-clone-Github-repo](2021-04-04%2020_00_44-CloneRepo.png)
 
 
 
