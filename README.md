@@ -13,7 +13,8 @@ Pharo Project code snippets and useful hints. Some topics here:
 
 ## Step 2: SSH keys and other settings for Iceberg in Pharo
 Open configuration of Iceberg tool (World menu > Tools > Iceberg > click Settings icon) and set:
-- local path to ssh keys: ![Pharo settings - Github](pharo_settings_ssh_keys.png)
+- local path to ssh keys:  
+![Pharo settings - Github](pharo_settings_ssh_keys.png)
 - set Default Code Subdirectory to: 'src'
 - set File format type to: 'Tonel'
 
