@@ -50,9 +50,9 @@ After cloning, you'll see project in Iceberg in state, where project metadata (h
 - Right click on your repo and choose "Commit"  
 - Type message to your commit, review changes  
 - Select "Push changes to origin/main"  
-![Commit-changes](2021-04-04%2021_00_37-commit.png)
-- Type missing git properties (Github name, email)
-![Git-properties](2021-04-04%2021_02_02-git-credentials.png)
+![Commit-changes](2021-04-04%2021_00_37-commit.png)  
+- Type missing git properties (Github name, email)  
+![Git-properties](2021-04-04%2021_02_02-git-credentials.png)  
 **That's it! Check your changes on Gihtub.**  
 
 ## Step 9: Define Baseline to load project dependencies (packages) in correct order (recommended)
