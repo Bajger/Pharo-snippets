@@ -37,7 +37,21 @@ Open system configuration from World menu > Pharo > Settings > System tab > Loca
 After cloning, you'll see project in Iceberg in state, where project metadata (how packages, classes are organized in repo) are missing. State "No project found" will be on line with cloned repo.  
 ![Github-clone-Github-repo](2021-04-04%2020_42_23-Repair-repo.png)
 - Choose "Repair repository" in context menu (right-click on repo)
-- 
+- Select "Create project meta-data" and click ok
+- Choose Format "Tonel" instead of Filetree and then ok
+
+## Step 7: Add packages, package extensions to your repository
+- Select your repo and right-click again, Choose "Packages"  
+![Github-clone-Github-repo](2021-04-04 20_52_42-add-packages.png)
+- Click '+' icon to add your packages (including extenstions) to your repo
+- Select desired packages and then ok
+
+## Step 8: Commit and push changes
+- Right click on your repo and choose "Commit"
+- Type message to your commit, review changes 
+- Select "Push changes to origin/main
+
+
 
 
 # Pharo IDE
