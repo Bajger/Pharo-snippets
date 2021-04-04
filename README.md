@@ -21,10 +21,10 @@ Open configuration of Iceberg tool (World menu > Tools > Iceberg > click Setting
 ## Step 3: Set local path to image directory
 Open system configuration from World menu > Pharo > Settings > System tab > Local Directory > click directory icon and navigate to path, where directory with image is located
 
-![Pharo-settings](https://github.com/Bajger/Pharo-snippets/blob/master/2021-04-04%2019_42_25-Window.png)
+![Pharo-settings](2021-04-04%2019_42_25-Window.png)
 
 ## Step 4: Create new (or use existing) Github repository
-![Github-new-repo](2021-04-04 19_51_58-Clipboard.png)
+![Github-new-repo](2021-04-04%2019_51_58-Clipboard.png)
 
 # Pharo IDE
 Using dark UI theme: 
