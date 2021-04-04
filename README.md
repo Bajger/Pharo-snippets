@@ -26,6 +26,15 @@ Open system configuration from World menu > Pharo > Settings > System tab > Loca
 ## Step 4: Create new (or use existing) Github repository
 ![Github-new-repo](2021-04-04%2019_51_58-Clipboard.png)
 
+## Step 5: Clone repository in Iceberg from Github
+- Open Iceberg and click '+' add icon
+- Choose "Clone from Github.com"
+- Set your name from Github and type repository name you want to clone
+- Choose "HTTPS" and click Ok
+![Github-clone-Github-repo](2021-04-04%2019_51_58-Clipboard.png)
+
+
+
 # Pharo IDE
 Using dark UI theme: 
 ```
