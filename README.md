@@ -21,6 +21,8 @@ Open configuration of Iceberg tool (World menu > Tools > Iceberg > click Setting
 ## Step 3: Set local path to image directory
 Open system configuration from World menu > Pharo > Settings > System tab > Local Directory > click directory icon and navigate to path, where directory with image is located
 
+![obrazek](https://user-images.githubusercontent.com/45875448/113517043-fe9bb500-957d-11eb-90b1-822dad67057f.png)
+
 
 
 # Pharo IDE
