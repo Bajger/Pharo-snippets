@@ -42,7 +42,8 @@ After cloning, you'll see project in Iceberg in state, where project metadata (h
 
 ## Step 7: Add packages, package extensions to your repository
 - Select your repo and right-click again, Choose "Packages"  
-![Github-clone-Github-repo](2021-04-04 20_52_42-add-packages.png)
+![Github-clone-Github-repo](2021-04-04%2020_52_42-add-packages.png)
+
 - Click '+' icon to add your packages (including extenstions) to your repo
 - Select desired packages and then ok
 
@@ -56,7 +57,13 @@ After cloning, you'll see project in Iceberg in state, where project metadata (h
 **That's it! Check your changes on Gihtub.**  
 
 ## Step 9: Define Baseline to load project dependencies (packages) in correct order (recommended)
-- Define in repo BaselineOfMyProject...  
+- Define in repo BaselineOfMyProject class like this (where MyProject is name of your project):
+```
+BaselineOf subclass: #BaselineOfMyProject
+	slots: {  }
+	classVariables: {  }
+	package: 'BaselineOfMyProject'
+```
 Tbd.
 
 
