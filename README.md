@@ -127,3 +127,7 @@ Some more Seaside specific resources:
  - https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/DeploymentWeb/DeployForProduction.html  
 
 You can also use docker to deploy (see http://wiki.astares.com/pharo/612)
+  
+  
+### REST via Seaside
+https://github.com/SeasideSt/Seaside/wiki/Seaside-REST  
