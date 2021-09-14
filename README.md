@@ -18,6 +18,12 @@ Open configuration of Iceberg tool (World menu > Tools > Iceberg > click Setting
 - set Default Code Subdirectory to: 'src'
 - set File format type to: 'Tonel'
 
+## Step 2a: Optionally, setuo Github CLI
+There is auth option to use GH CLI, installation here: https://github.com/cli/cli#installation  
+- install e.g. using `brew install gh`  
+- set authentication method for git command line: `gh auth login` and select: HTTPS and then 'Authenticate using browser'  
+Git remote commands then run using GH CLI authentication  
+
 ## Step 3: Set local path to image directory
 Open system configuration from World menu > Pharo > Settings > System tab > Local Directory > click directory icon and navigate to path, where directory with image is located
 
@@ -47,7 +53,7 @@ After cloning, you'll see project in Iceberg in state, where project metadata (h
 - Click '+' icon to add your packages (including extenstions) to your repo
 - Select desired packages and then ok
 
-## Step 8: Commit and push changes
+## Step 8: Commit and push changes to main branch directly
 - Right click on your repo and choose "Commit"  
 - Type message to your commit, review changes  
 - Select "Push changes to origin/main"  
@@ -55,6 +61,9 @@ After cloning, you'll see project in Iceberg in state, where project metadata (h
 - Type missing git properties (Github name, email)  
 ![Git-properties](2021-04-04%2021_02_02-git-credentials.png)  
 **That's it! Check your changes on Gihtub.**  
+
+## Step 8a: Optionally, commit changes using feature branch and PR  
+TODO  
 
 ## Step 9: Define Baseline to load project dependencies (packages) in correct order (recommended)
 - Define in repo BaselineOfMyProject class like this (where MyProject is name of your project):
