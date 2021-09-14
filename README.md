@@ -18,7 +18,7 @@ Open configuration of Iceberg tool (World menu > Tools > Iceberg > click Setting
 - set Default Code Subdirectory to: 'src'
 - set File format type to: 'Tonel'
 
-## Step 2a: Optionally, setuo Github CLI
+## Step 2a: Optionally, setup Github CLI
 There is auth option to use GH CLI, installation here: https://github.com/cli/cli#installation  
 - install e.g. using `brew install gh`  
 - set authentication method for git command line: `gh auth login` and select: HTTPS and then 'Authenticate using browser'  
@@ -63,7 +63,17 @@ After cloning, you'll see project in Iceberg in state, where project metadata (h
 **That's it! Check your changes on Gihtub.**  
 
 ## Step 8a: Optionally, commit changes using feature branch and PR  
-TODO  
+- Right click on repo in Pharo and select "Github -> Create new branch for an issue"  
+![image](https://user-images.githubusercontent.com/45875448/133251077-41fd6dd0-4c6e-49dc-afa7-20ee34eee93f.png)
+- Select a remote branch (depending if you want to pull title from issue on your own repo on GH or original repo from which you did fork)  
+- Put referencing issue nr. (title will be pulled from issue on GH)  
+- Then right click and select "commit" and then "Push"  
+- Put "Fixes #<issueNr>" on first line and add description on additional lines and click "commit"  
+- Right click on repo and choose "Gitbub -> Create Pull request"  
+![image](https://user-images.githubusercontent.com/45875448/133252434-df54c9df-4efd-44d3-809a-11a36845ddbc.png)
+- Check head branch and remote (base) branch and press "Create pull request"  
+
+
 
 ## Step 9: Define Baseline to load project dependencies (packages) in correct order (recommended)
 - Define in repo BaselineOfMyProject class like this (where MyProject is name of your project):
