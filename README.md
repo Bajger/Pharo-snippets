@@ -85,6 +85,12 @@ BaselineOf subclass: #BaselineOfMyProject
 ```
 Tbd.
 
+# Useful git snippets, hints
+## Resetting commits from repo
+- On local repo just checkout branch where you want to remove/wipe-out commits
+- Check stutus of last commits e.g. by: `git log --pretty=format:"%h - %an, %ar : %s"`  
+- Execute e.g.: `git reset --hard HEAD~3` (this will remove last 3 commits from local branch)
+- then execute:`git push origin -f` which will remove commits also on remote repo
 
 
 # Pharo IDE
