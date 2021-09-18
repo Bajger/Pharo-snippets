@@ -11,18 +11,23 @@ Pharo Project code snippets and useful hints. Some topics here:
 
 
 
-## Step 2: SSH keys and other settings for Iceberg in Pharo
+## Step 2: SSH keys, auth. token and other settings for Iceberg in Pharo
 Open configuration of Iceberg tool (World menu > Tools > Iceberg > click Settings icon) and set:
 - local path to ssh keys:  
 ![Pharo settings - Iceberg](pharo_settings_ssh_keys.png)
 - set Default Code Subdirectory to: 'src'
-- set File format type to: 'Tonel'
+- set File format type to: 'Tonel'  
+- set github token on credential list (that was previously ![generated on Github](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+![image](https://user-images.githubusercontent.com/45875448/133891834-4a540fd4-6049-4e47-ae0f-a0b0e08a92d8.png)
+- see full description ![here](https://github.com/pharo-vcs/iceberg/wiki/Authentication-Credentials)
 
 ## Step 2a: Optionally, setup Github CLI
+Github CLI is useful when doing manual changes with repo (from command line).  
 There is auth option to use GH CLI, installation here: https://github.com/cli/cli#installation  
 - install e.g. using `brew install gh`  
 - set authentication method for git command line: `gh auth login` and select: HTTPS and then 'Authenticate using browser'  
 Git remote commands then run using GH CLI authentication  
+- alternativelly, you can login via token e.g.: `gh auth login --with-token < some-token.txt`
 
 ## Step 3: Set local path to image directory
 Open system configuration from World menu > Pharo > Settings > System tab > Local Directory > click directory icon and navigate to path, where directory with image is located
