@@ -109,6 +109,15 @@ Metacello new
 # Debugging / profiling
 Finding all references: `self pointersTo: anObject` 
 or use reference finder by: `ReferenceFinder findPathTo: #nil` 
+	
+# File system, handling of files
+```
+"use proper line ending on target platform"
+lineEnding := OSPlatform current lineEnding.
+	
+"using memory file reference - useful in tests"
+memoryFileReference := FileSystem memory root / 'exercises'.
+```
 
 # Pharo Projects 
 ## Pharo launcher 
