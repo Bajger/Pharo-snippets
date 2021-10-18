@@ -1,11 +1,11 @@
 # List of concept exercises
-Following concepts are organized in Pharo language specific manner. They don't use conventional approach of describing language aspects used from mainstream languages, it's more focused on specific and unique language properties. However, most of exercises can be somehow "mapped" to the conventional terms or explanation topics (e.g. iterating through collections can be mapped to "for", "do-while" terms or concepts).
+Following concepts are organized in Pharo language specific manner. They don't use conventional approach of describing language aspects used from mainstream languages, it's more focused on specific and unique language properties. However, most of exercises can be somehow "mapped" to the conventional terms or explanation topics (e.g. iterating through collections can be mapped to "for", "do-while" terms or concepts).  
 Concepts are described just from very high level, so every concept exercise would need separate comperhensive content with sample code examples/exercises.
 
 ## Foreword - key aspects of Pharo
 - introduce key aspects of Pharo: not just language but also dev environment
 - not file based but image based, program and data together
-- JIT compliled and VM based
+- JIT compiled and VM based
 - Live, immersive and dynamic system (everything is inspectable)
 - Simple but powerful model (only few syntax elements, everything else part of standard library)
 - No primitive types
