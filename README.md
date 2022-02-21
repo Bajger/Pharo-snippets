@@ -96,7 +96,11 @@ Tbd.
 - Check stutus of last commits e.g. by: `git log --pretty=format:"%h - %an, %ar : %s"`  
 - Execute e.g.: `git reset --hard HEAD~3` (this will remove last 3 commits from local branch)
 - then execute:`git push origin -f` which will remove commits also on remote repo
-
+## Rebasing branch  
+Rebasing is useful when feature or issue branch is based on deprecated state of repo (forked long time ago). Therefore it is useful to sync with main branch and rebase commits from feature branch, so related PR can be merged and conflicts can be resolved.
+- To switch to feature branch: `git checkout feature-branch`
+- Rebase commits with main branch: `git rebase main`
+(See more ![here](https://www.freecodecamp.org/news/the-ultimate-guide-to-git-merge-and-git-rebase/))
 
 # Pharo IDE
 Using dark UI theme: 
