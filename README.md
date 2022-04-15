@@ -100,8 +100,36 @@ Tbd.
 Rebasing is useful when feature or issue branch is based on deprecated state of repo (forked long time ago). Therefore it is useful to sync with main branch and rebase commits from feature branch, so related PR can be merged and conflicts can be resolved.
 - To switch to feature branch: `git checkout feature-branch`
 - Rebase commits with main branch: `git rebase main`  
+[See more](https://www.freecodecamp.org/news/the-ultimate-guide-to-git-merge-and-git-rebase)  
 
-[See more](https://www.freecodecamp.org/news/the-ultimate-guide-to-git-merge-and-git-rebase)
+## Squash commits into one
+Squashing is useful to put together multiple commits into just one commit  
+Step 1: run rebase command:   
+`git rebase -i HEAD~[X]` to squash last X commits  
+Step 2: edit file with commands:  
+To define what to do wih each commit, you need to edit file and pick first and squash all others:  
+```
+pick SHA1 commit 1
+s SHA2 commit 2
+s SHA3 commit 3
+...
+```
+Details [here](https://www.baeldung.com/ops/git-squash-commits)  
+
+## Cherry picking commits
+This is used when you want to apply commit from different branch and individually copy them do current branch  
+Step 1: Check out to branch where you want to apply your commits  
+Step 2: To cherry-pick all the commits from commit A to commit B (where A is older than B), run:  
+```
+git cherry-pick A^..B
+```
+If you want to ignore A itself, run: `git cherry-pick A..B`  
+
+Step 3: Some merge conflicts might occur:  
+Resolve them (by editing applying incoming or using current changes) and run `git cherry-pick --continue`  
+
+Details [here](https://stackoverflow.com/questions/1670970/how-to-cherry-pick-multiple-commits)
+
 
 # Pharo IDE
 Using dark UI theme: 
