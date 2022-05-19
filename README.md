@@ -139,7 +139,15 @@ TODO pic
 4. Choose Partitions (primary or logical) used by US (ext.4) and choose resize  
 5. Disk (or `df -H`) usage should show new available space  
 
+## Setup of shared folder (with host OS)
+1. Install guest additions on Ubuntu
+2. Add shared folder device in VirtualBox -> Settings -> shared folder
+3. sudo mount -t vboxsf <sharedDeviceName> ~/<targetFolder>`
 
+## Remove old packages
+Run `sudo apt-get autoremove --purge`  
+
+	
 # Pharo IDE
 Using dark UI theme: 
 ```
