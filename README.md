@@ -130,6 +130,15 @@ Resolve them (by editing applying incoming or using current changes) and run `gi
 
 Details [here](https://stackoverflow.com/questions/1670970/how-to-cherry-pick-multiple-commits)
 
+# VirtualBox hints (for Ubuntu image)
+## How to extend image size and partition
+1. In VirtualBox, go to File -> Virtual Media manager  
+2. Choose image file and extend to needed image size  
+TODO pic  
+3. Start Ubuntu and go to Apps -> Utilities -> disks  
+4. Choose Partitions (primary or logical) used by US (ext.4) and choose resize  
+5. Disk (or `df -H`) usage should show new available space  
+
 
 # Pharo IDE
 Using dark UI theme: 
