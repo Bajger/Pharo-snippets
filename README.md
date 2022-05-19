@@ -142,7 +142,7 @@ TODO pic
 ## Setup of shared folder (with host OS)
 1. Install guest additions on Ubuntu
 2. Add shared folder device in VirtualBox -> Settings -> shared folder
-3. sudo mount -t vboxsf <sharedDeviceName> ~/<targetFolder>`
+3. run `sudo mount -t vboxsf <sharedDeviceName> ~/<targetFolder>`
 
 ## Remove old packages
 Run `sudo apt-get autoremove --purge`  
