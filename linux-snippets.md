@@ -14,3 +14,4 @@ TODO pic
 
 ## Remove old packages
 Run `sudo apt-get autoremove --purge`  
+Additional hints [here](https://www.omgubuntu.co.uk/2016/08/5-ways-free-up-space-on-ubuntu)
