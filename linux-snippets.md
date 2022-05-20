@@ -2,9 +2,10 @@
 ## How to extend image size and partition
 1. In VirtualBox, go to File -> Virtual Media manager  
 2. Choose image file and extend to needed image size  
-![extend partition](./images/partition-resize.jpg)
+![image-resize](./images/virtual_device_manager.jpg)
 3. Start Ubuntu and go to Apps -> Utilities -> disks  
-4. Choose Partitions (primary or logical) used by US (ext.4) and choose resize  
+4. Choose Partitions (primary or logical) used by US (ext.4) and choose resize
+![partition-resize](./images/partition_resize.jpg)  
 5. Disk (or `df -H`) usage should show new available space  
 
 ## Setup of shared folder (with host OS)
