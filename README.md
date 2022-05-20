@@ -7,14 +7,14 @@ Pharo Project code snippets and useful hints. Some topics here:
 ## Step 1: SSH keys on Github
 * Generate new public/private key pair if needed: https://help.github.com/articles/generating-an-ssh-key/
 * Open Configuration on Github: User -> Settings -> SSH and GPG keys
-![SSH keys - Github](ssh_keys_github.png)
+![SSH keys - Github](./images/ssh_keys_github.png)
 
 
 
 ## Step 2: SSH keys, auth. token and other settings for Iceberg in Pharo
 Open configuration of Iceberg tool (World menu > Tools > Iceberg > click Settings icon) and set:
 - local path to ssh keys:  
-![Pharo settings - Iceberg](pharo_settings_ssh_keys.png)
+![Pharo settings - Iceberg](./images/pharo_settings_ssh_keys.png)
 - set Default Code Subdirectory to: 'src'
 - set File format type to: 'Tonel'  
 - set github token on credential list (that was previously ![generated on Github](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
@@ -32,28 +32,28 @@ Git remote commands then run using GH CLI authentication
 ## Step 3: Set local path to image directory
 Open system configuration from World menu > Pharo > Settings > System tab > Local Directory > click directory icon and navigate to path, where directory with image is located
 
-![Pharo-settings](2021-04-04%2019_42_25-Window.png)
+![Pharo-settings](./images/2021-04-04%2019_42_25-Window.png)
 
 ## Step 4: Create new (or use existing) Github repository
-![Github-new-repo](2021-04-04%2019_51_58-Clipboard.png)
+![Github-new-repo](./images/2021-04-04%2019_51_58-Clipboard.png)
 
 ## Step 5: Clone repository in Iceberg from Github
 - Open Iceberg and click '+' add icon
 - Choose "Clone from Github.com"
 - Set your name from Github and type repository name you want to clone
 - Choose "HTTPS" and click Ok  
-![Github-clone-Github-repo](2021-04-04%2020_00_44-CloneRepo.png)
+![Github-clone-Github-repo](./images/2021-04-04%2020_00_44-CloneRepo.png)
 
 ## Step 6: Repair metadata of empty repository
 After cloning, you'll see project in Iceberg in state, where project metadata (how packages, classes are organized in repo) are missing. State "No project found" will be on line with cloned repo.  
-![Github-clone-Github-repo](2021-04-04%2020_42_23-Repair-repo.png)
+![Github-clone-Github-repo](./images/2021-04-04%2020_42_23-Repair-repo.png)
 - Choose "Repair repository" in context menu (right-click on repo)
 - Select "Create project meta-data" and click ok
 - Choose Format "Tonel" instead of Filetree and then ok
 
 ## Step 7: Add packages, package extensions to your repository
 - Select your repo and right-click again, Choose "Packages"  
-![Github-clone-Github-repo](2021-04-04%2020_52_42-add-packages.png)
+![Github-clone-Github-repo](./images/2021-04-04%2020_52_42-add-packages.png)
 
 - Click '+' icon to add your packages (including extenstions) to your repo
 - Select desired packages and then ok
@@ -62,9 +62,9 @@ After cloning, you'll see project in Iceberg in state, where project metadata (h
 - Right click on your repo and choose "Commit"  
 - Type message to your commit, review changes  
 - Select "Push changes to origin/main"  
-![Commit-changes](2021-04-04%2021_00_37-commit.png)  
+![Commit-changes](./images/2021-04-04%2021_00_37-commit.png)  
 - Type missing git properties (Github name, email)  
-![Git-properties](2021-04-04%2021_02_02-git-credentials.png)  
+![Git-properties](./images/2021-04-04%2021_02_02-git-credentials.png)  
 **That's it! Check your changes on Gihtub.**  
 
 ## Step 8a: Optionally, commit changes using feature branch and PR  
