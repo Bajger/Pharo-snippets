@@ -143,6 +143,21 @@ Metacello new
 # Debugging / profiling
 Finding all references: `self pointersTo: anObject` 
 or use reference finder by: `ReferenceFinder findPathTo: #nil` 
+
+## Define custom inspector
+Inspector can be adopted to show some details that are presented in nicer way than raw. Method with annotation has to be defined, e.g.:  
+```
+<inspectorPresentationOrder: 1 title: 'Demo'>
+    | items |
+    items := #( 1 2 3 4 5 6 7 8 ).
+
+    ^ SpListPresenter new
+        items: (items collect: [ :e |
+            StInspectorTransmissionNode hostObject: e transmissionBlock: [ :theObject | theObject + 100 ] ]);
+        display: [ :e | e hostObject ];
+        yourself
+```
+Note: See all implementors of `inspectorPresentationOrder:title:` method to see examples.  
 	
 # File system, handling of files
 ```
