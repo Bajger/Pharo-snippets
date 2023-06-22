@@ -158,6 +158,14 @@ Inspector can be adopted to show some details that are presented in nicer way th
         yourself
 ```
 Note: See all implementors of `inspectorPresentationOrder:title:` method to see examples.  
+
+## Get package dependencies
+To see how packages are dependent on each other, evaluate following:
+```
+|report|
+report := DADependencyChecker new computeImageDependencies.
+report knownDependantsOf: 'YourPackage'
+```
 	
 # File system, handling of files
 ```
