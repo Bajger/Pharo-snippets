@@ -89,7 +89,32 @@ BaselineOf subclass: #BaselineOfMyProject
 	classVariables: {  }
 	package: 'BaselineOfMyProject'
 ```
-Tbd.
+Then in `BaselineOfMyProject` class define method that would define project dependencies (example below is simple and doesn't define any package dependencies):
+```
+baseline: spec
+	<baseline>
+	spec
+		for: #common
+		do: [
+			"Define packages from your project to be loaded"
+			spec
+				package: 'MyProject';
+				package: 'MyProject-Tests';
+				package: 'MyProject-Gui';
+				package: 'MyProject-Gui-Tests';
+				package: 'MyProject-Examples' ]
+```
+Add package `BaselineOfMyProject` to your repository (as in step 7). You should see a new changes (new class and method). Commit these changes to git repository and push to your remote GitHub repo. 
+## Step 10: Load own Github project into Pharo image
+Next, your previous definition of Baseline can be used to load project using Metacello command. You can try it on fresh empty image to see, if everything works as expected.
+Project and its packages should be loaded to your image after evaluating:
+```
+Metacello new
+	repository: {yourGHAccount/{YourRepository};
+	baseline: {MyProject};
+	load
+```
+>__Note: For more details, how baselines, dependencies and loading work, see this comprehensive guide: [How to load GitHub project using Baseline](https://github.com/pharo-open-documentation/pharo-wiki/blob/master/General/Baselines.md#how-to-load-a-git-project-using-its-baseline)__
 
 # Useful git snippets, hints
 ## Resetting commits from repo
