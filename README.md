@@ -158,12 +158,12 @@ Details [here](https://stackoverflow.com/questions/1670970/how-to-cherry-pick-mu
 
 	
 # Pharo IDE
-Using dark UI theme: 
+Using dark dawn UI theme: 
 ```
 Metacello new 
-    baseline: 'PharoDawnTheme';
-    repository: 'github://sebastianconcept/PharoDawnTheme';
-    load.
+	baseline: 'PharoDawnTheme';
+	repository: 'github://sebastianconcept/PharoDawnTheme:latest';
+	load.
 ```
 # Debugging / profiling
 Finding all references: `self pointersTo: anObject` 
