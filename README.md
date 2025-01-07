@@ -200,6 +200,8 @@ lineEnding := OSPlatform current lineEnding.
 "using memory file reference - useful in tests"
 memoryFileReference := FileSystem memory root / 'exercises'.
 ```
+# UI frameworks, icons
+Get list of existing icons: `Smalltalk ui icons` or `ThemeIcons current`.
 
 # Pharo Projects 
 ## Pharo launcher 
