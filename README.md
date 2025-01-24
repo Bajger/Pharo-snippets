@@ -193,13 +193,35 @@ report knownDependantsOf: 'YourPackage'
 ```
 	
 # File system, handling of files
+## Line endings dependent on OS platform
 ```
 "use proper line ending on target platform"
 lineEnding := OSPlatform current lineEnding.
-	
+```
+## Memory file reference
+```	
 "using memory file reference - useful in tests"
 memoryFileReference := FileSystem memory root / 'exercises'.
 ```
+## Using mock memory file system in tests
+```
+"prerequisite"
+DiskStore class>> currentFileSystem: fileSystem during: aBlock
+	| backupFileSystem |
+	backupFileSystem := self currentFileSystem.
+	[ CurrentFS := fileSystem.
+	aBlock value ]
+		ensure: [  CurrentFS:= backupFileSystem ]
+
+
+"and then use of different FS"
+memoryFileSystem := FileSystem memory.
+	DiskStore
+		currentFileSystem: memoryFileSystem
+		during: [ location := (memoryFileSystem root / 'non-existing.image') ensureCreateFile.
+			self should: [ command findImage: '/wrong/path' ] raise: NotFound ]
+```
+
 # UI frameworks, icons
 Get list of existing icons: `Smalltalk ui icons` or `ThemeIcons current`.
 
