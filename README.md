@@ -221,6 +221,55 @@ memoryFileSystem := FileSystem memory.
 		during: [ location := (memoryFileSystem root / 'non-existing.image') ensureCreateFile.
 			self should: [ command findImage: '/wrong/path' ] raise: NotFound ]
 ```
+# OS interaction from Pharo
+For runnning OS processes from Pharo program [OS Subprocess library](https://github.com/pharo-contributions/OSSubprocess) can be used.  
+Main advantage is that Pharo process is not blocked by running OS process, unlike using e.g.:` LibC runCommand: 'scp myfile.zip`.
+
+## Loading OS Subprocess dependency to own project
+Add following method in Project baseline class (`BaselineOfMyProject`): 
+```
+"MacOS, Linux platform support"
+BaselineOfMyProject>>addOSSubprocessDependency: spec
+spec 
+	baseline: 'OSSubprocess'
+	with: [spec repository: 'github://pharo-contributions/OSSubprocess:master/repository'].
+
+"Windows support"	
+spec 
+	baseline: 'OSWinSubprocess'
+	with: [spec repository: 'github://pharo-contributions/OSWinSubprocess:master/repository'].
+```
+
+## Using OS Subprocess in program
+Define accessor instance (or class) variable to obtain Platform specific class: 
+```
+MyClass>>osSubProcess
+^ osSubProcess 
+	ifNotNil: [ osSubProcess ] 
+	ifNil: [ 
+	  osSubProcess := self class subProcessClass.
+	  osSubProcess ]
+
+MyClass class>>subProcessClass
+    OSPlatform current isWindows ifTrue: [ 
+        ^ self class environment at: #OSWSWinProcess
+    ].
+    ^ self class environment at: #OSSUnixSubprocess 
+```
+And then you can invoke external program fron Pharo using:
+```
+| result |		
+result := self osSubProcess new
+	command: 'myOsCommand';
+	workingDirectory: self configletRootReference fullName;
+	arguments: {'arg1'. 'arg2'.} asArray;
+		redirectStdout;
+		runAndWait.
+	
+result isSuccess ifFalse: [ 
+	result lastError printString.
+]
+```
 
 # UI frameworks, icons
 Get list of existing icons: `Smalltalk ui icons` or `ThemeIcons current`.
