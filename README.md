@@ -270,6 +270,21 @@ result isSuccess ifFalse: [
 	result lastError printString.
 ]
 ```
+# Handling classes, methods
+## Removing classes and extension methods from system
+```Smalltalk
+"remove classes within package"
+aPackage := Package named: 'myPackage'.
+aPackage definedClasses do: [:aClass |
+	aPackage removeClassNamed: aClass name. 
+	aClass removeFromSystem
+].
+
+"remove extension methods"
+methodsToRemove := exercisePackage extensionMethods.
+exercisePackage removeMethods: methodsToRemove.
+methodsToRemove do: #removeFromSystem
+```
 
 # UI frameworks, icons
 Get list of existing icons: `Smalltalk ui icons` or `ThemeIcons current`.
